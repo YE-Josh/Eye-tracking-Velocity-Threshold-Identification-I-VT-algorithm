@@ -1,22 +1,33 @@
-"""I-VT (Velocity Threshold Identification) eye-movement classifier."""
+"""
+I-VT: Velocity Threshold Identification for eye-tracking data.
+"""
 
-from .algorithm import (
+from .ivt_algorithm import (
     IVTConfig,
-    classify_samples,
+    IVTResult,
     compute_velocity,
+    classify_samples,
+    apply_minimum_fixation_duration,
     run_ivt,
-    summarize_events,
+    DEFAULT_VELOCITY_THRESHOLD_DEG,
+    DEFAULT_VELOCITY_THRESHOLD_PIX,
+    DEFAULT_MIN_FIXATION_DURATION_MS,
 )
-from .io import read_gaze_file, write_gaze_file
+from .io_utils import read_gaze_file, list_excel_sheets, write_ivt_outputs
 
 __all__ = [
     "IVTConfig",
-    "classify_samples",
+    "IVTResult",
     "compute_velocity",
+    "classify_samples",
+    "apply_minimum_fixation_duration",
     "run_ivt",
-    "summarize_events",
     "read_gaze_file",
-    "write_gaze_file",
+    "list_excel_sheets",
+    "write_ivt_outputs",
+    "DEFAULT_VELOCITY_THRESHOLD_DEG",
+    "DEFAULT_VELOCITY_THRESHOLD_PIX",
+    "DEFAULT_MIN_FIXATION_DURATION_MS",
 ]
 
 __version__ = "0.1.0"

@@ -1,12 +1,24 @@
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
 *.egg-info/
-.pytest_cache/
 .venv/
 venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Build artifacts
 build/
 dist/
-.ipynb_checkpoints/
+
+# Output files
 examples/output/
+*.log
+ivt_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
 .DS_Store
