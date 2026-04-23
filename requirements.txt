@@ -1,0 +1,5 @@
+numpy>=1.23
+pandas>=1.5
+openpyxl>=3.1       # Excel .xlsx support for pandas
+matplotlib>=3.6     # optional, only needed for ivt.viz
+pytest>=7.0         # optional, only needed for running tests
